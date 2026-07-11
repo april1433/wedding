@@ -2003,6 +2003,7 @@ footer {
 
 /* ── FLOATING MUSIC BUTTON ── */
 .music-btn {
+  display: none !important; /* Make it invisible so the music plays purely in the background */
   position: fixed;
   bottom: 24px;
   right: 24px;
