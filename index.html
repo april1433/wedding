@@ -462,7 +462,11 @@
             <div class="rf-group">
               <label class="rf-label">Full Name</label>
               <div class="rf-input-wrap">
-                <svg class="rf-icon" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="6" r="4" stroke="currentColor" stroke-width="1.4"/><path d="M2 18c0-4.418 3.582-8 8-8s8 3.582 8 8" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+                <svg class="rf-icon" viewBox="0 0 20 20" fill="none">
+                  <circle cx="10" cy="6" r="4" stroke="currentColor" stroke-width="1.4" />
+                  <path d="M2 18c0-4.418 3.582-8 8-8s8 3.582 8 8" stroke="currentColor" stroke-width="1.4"
+                    stroke-linecap="round" />
+                </svg>
                 <input type="text" id="r-name" name="name" required placeholder="April Joy">
               </div>
             </div>
@@ -472,19 +476,29 @@
               <div class="rf-group">
                 <label class="rf-label">Will You Attend?</label>
                 <div class="rf-input-wrap rf-select-wrap">
-                  <svg class="rf-icon" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8" stroke="currentColor" stroke-width="1.4"/><path d="M6.5 10l2.5 2.5 4.5-4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  <svg class="rf-icon" viewBox="0 0 20 20" fill="none">
+                    <circle cx="10" cy="10" r="8" stroke="currentColor" stroke-width="1.4" />
+                    <path d="M6.5 10l2.5 2.5 4.5-4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
                   <select id="r-attend" name="attending" required>
                     <option value="">Select</option>
                     <option value="Joyfully Accepts">Joyfully Accepts</option>
                     <option value="Regretfully Declines">Regretfully Declines</option>
                   </select>
-                  <svg class="rf-chevron" viewBox="0 0 16 16" fill="none"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                  <svg class="rf-chevron" viewBox="0 0 16 16" fill="none">
+                    <path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                  </svg>
                 </div>
               </div>
               <div class="rf-group">
                 <label class="rf-label">Number of Guests</label>
                 <div class="rf-input-wrap rf-counter-wrap">
-                  <svg class="rf-icon" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="6" r="4" stroke="currentColor" stroke-width="1.4"/><path d="M2 18c0-4.418 3.582-8 8-8s8 3.582 8 8" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+                  <svg class="rf-icon" viewBox="0 0 20 20" fill="none">
+                    <circle cx="10" cy="6" r="4" stroke="currentColor" stroke-width="1.4" />
+                    <path d="M2 18c0-4.418 3.582-8 8-8s8 3.582 8 8" stroke="currentColor" stroke-width="1.4"
+                      stroke-linecap="round" />
+                  </svg>
                   <span class="rf-count-num" id="rf-count">1</span>
                   <input type="hidden" id="r-guests" name="guests" value="1">
                   <div class="rf-counter-btns">
@@ -499,7 +513,10 @@
             <div class="rf-group">
               <label class="rf-label">Email or Contact Number</label>
               <div class="rf-input-wrap">
-                <svg class="rf-icon" viewBox="0 0 20 20" fill="none"><rect x="2" y="4" width="16" height="12" rx="2" stroke="currentColor" stroke-width="1.4"/><path d="M2 7l8 5 8-5" stroke="currentColor" stroke-width="1.4"/></svg>
+                <svg class="rf-icon" viewBox="0 0 20 20" fill="none">
+                  <rect x="2" y="4" width="16" height="12" rx="2" stroke="currentColor" stroke-width="1.4" />
+                  <path d="M2 7l8 5 8-5" stroke="currentColor" stroke-width="1.4" />
+                </svg>
                 <input type="text" id="r-email" name="contact" placeholder="for updates only">
               </div>
             </div>
@@ -508,7 +525,10 @@
             <div class="rf-group">
               <label class="rf-label">Message for the Couple</label>
               <div class="rf-input-wrap rf-textarea-wrap">
-                <svg class="rf-icon rf-icon-top" viewBox="0 0 20 20" fill="currentColor"><path d="M6 6a2 2 0 00-2 2v4a2 2 0 002 2h1l2 2 2-2h1a2 2 0 002-2V8a2 2 0 00-2-2H6z" opacity=".25"/><text x="5" y="13" font-size="9" fill="currentColor" font-family="serif" font-weight="bold">"</text></svg>
+                <svg class="rf-icon rf-icon-top" viewBox="0 0 20 20" fill="currentColor">
+                  <path d="M6 6a2 2 0 00-2 2v4a2 2 0 002 2h1l2 2 2-2h1a2 2 0 002-2V8a2 2 0 00-2-2H6z" opacity=".25" />
+                  <text x="5" y="13" font-size="9" fill="currentColor" font-family="serif" font-weight="bold">"</text>
+                </svg>
                 <textarea id="r-message" name="message" rows="4" placeholder="Leave your wishes..."></textarea>
               </div>
             </div>
@@ -578,7 +598,16 @@
       </div>
     </div>
     <div class="footer-bottom">With love, Ian &amp; Grace — © 2026 All rights reserved.</div>
+    <div class="footer-bottom">Made By: April Jay </div>
   </footer>
+
+  <!-- Floating Music Player -->
+  <button id="music-toggle" class="music-btn paused" aria-label="Toggle Music">
+    <div class="music-waves">
+      <span></span><span></span><span></span><span></span>
+    </div>
+  </button>
+  <audio id="bg-music" loop src="assets/wedding.mp3"></audio>
 
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
   <script src="config.js"></script>
@@ -605,21 +634,21 @@
     }
 
     /* ── Guest counter +/- ── */
-    (function(){
+    (function () {
       const minusBtn = document.getElementById('rf-minus');
-      const plusBtn  = document.getElementById('rf-plus');
-      const display  = document.getElementById('rf-count');
-      const hidden   = document.getElementById('r-guests');
-      if(!minusBtn) return;
+      const plusBtn = document.getElementById('rf-plus');
+      const display = document.getElementById('rf-count');
+      const hidden = document.getElementById('r-guests');
+      if (!minusBtn) return;
       let count = 1;
-      function update(n){
+      function update(n) {
         count = Math.max(0, Math.min(10, n));
         display.textContent = count;
         hidden.value = count;
         minusBtn.disabled = count <= 0;
       }
       minusBtn.addEventListener('click', () => update(count - 1));
-      plusBtn.addEventListener('click',  () => update(count + 1));
+      plusBtn.addEventListener('click', () => update(count + 1));
       update(1);
     })();
 

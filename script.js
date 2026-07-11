@@ -181,3 +181,59 @@ if(gbForm){
     }
   });
 }
+
+/* =========================================================
+   BACKGROUND MUSIC WITH AUTOPLAY BYPASS
+========================================================= */
+(function() {
+  const music = document.getElementById("bg-music");
+  const toggle = document.getElementById("music-toggle");
+  if (!music || !toggle) return;
+
+  function playMusic() {
+    music.play().then(() => {
+      toggle.classList.remove("paused");
+      toggle.classList.add("playing");
+      removeInteractionListeners();
+    }).catch(err => {
+      console.log("Autoplay prevented. Waiting for user interaction...");
+    });
+  }
+
+  function toggleMusic() {
+    if (music.paused) {
+      music.play();
+      toggle.classList.remove("paused");
+      toggle.classList.add("playing");
+    } else {
+      music.pause();
+      toggle.classList.remove("playing");
+      toggle.classList.add("paused");
+    }
+  }
+
+  toggle.addEventListener("click", (e) => {
+    e.stopPropagation();
+    toggleMusic();
+  });
+
+  // Try to play immediately on page load
+  window.addEventListener("load", playMusic);
+
+  // If blocked, play on first interaction
+  const interactionEvents = ["click", "touchstart", "scroll", "keydown"];
+  function handleFirstInteraction() {
+    playMusic();
+  }
+  
+  interactionEvents.forEach(evt => {
+    document.addEventListener(evt, handleFirstInteraction, { once: true, passive: true });
+  });
+
+  function removeInteractionListeners() {
+    interactionEvents.forEach(evt => {
+      document.removeEventListener(evt, handleFirstInteraction);
+    });
+  }
+})();
+
