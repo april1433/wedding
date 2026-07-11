@@ -1,0 +1,11 @@
+{
+  "name": "wedding-site",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host"
+  },
+  "devDependencies": {
+    "vite": "^5.4.1"
+  }
+}
