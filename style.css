@@ -1634,8 +1634,9 @@ section {
   height: 200px;
   pointer-events: none;
   z-index: 0;
-  opacity: 0.25;
+  opacity: 0.35;
   background: url('assets/gold_leaf_branch.png') center / cover no-repeat;
+  mix-blend-mode: screen;
 }
 .ent-corner--tl { top: 0;    left: 0;  transform: rotate(0deg); }
 .ent-corner--tr { top: 0;    right: 0; transform: rotate(90deg); }
