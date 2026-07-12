@@ -1022,7 +1022,7 @@ section {
    GALLERY — CAPTURED MOMENTS
 ========================================================= */
 .gallery {
-  background: var(--cream-100);
+  background: #0d0005;
   position: relative;
   overflow: hidden;
   padding-top: 80px;
@@ -1034,7 +1034,7 @@ section {
   position: absolute;
   font-size: 5rem;
   color: var(--gold-400);
-  opacity: .18;
+  opacity: .08;
   pointer-events: none;
   line-height: 1;
 }
@@ -1047,9 +1047,16 @@ section {
 .gal-subtitle {
   font-family: var(--font-script);
   font-size: 1.15rem;
-  color: var(--ink-600);
+  color: rgba(244, 236, 223, 0.65);
   margin: 4px 0 0;
   text-align: center;
+}
+/* Override section-head colors inside dark gallery */
+.gallery .section-title {
+  color: var(--cream-100);
+}
+.gallery .eyebrow {
+  color: var(--gold-400);
 }
 
 /* ── Top row ── */
@@ -1067,7 +1074,7 @@ section {
   border-radius: 14px;
   overflow: hidden;
   height: 380px;
-  background: #100008;
+  background: #000000;
 }
 /* Hero image — show full couple (contain blends with dark bg) */
 .gal-hero-bg { display: none; }
@@ -1119,7 +1126,7 @@ section {
   font-family: var(--font-display);
   font-size: 1.65rem;
   font-weight: 600;
-  color: var(--maroon-800);
+  color: var(--cream-100);
   line-height: 1.25;
   margin: 0;
 }
@@ -1132,7 +1139,7 @@ section {
 .gal-side-desc {
   font-size: .82rem;
   line-height: 1.7;
-  color: var(--ink-600);
+  color: rgba(244, 236, 223, 0.65);
   margin: 0;
 }
 .gal-view-btn {
@@ -1178,7 +1185,7 @@ section {
   border-radius: 10px;
   overflow: hidden;
   position: relative;
-  background: #100008;
+  background: #000000;
 }
 .gal-m-tall { height: 100%; }
 /* Hide unused bg images */
@@ -1222,13 +1229,13 @@ section {
 .gal-fq-text {
   font-family: var(--font-script);
   font-size: 1.2rem;
-  color: var(--ink-600);
+  color: rgba(244, 236, 223, 0.7);
   line-height: 1.6;
   margin: 0;
 }
 .gal-fq-heart {
   font-size: .9rem;
-  color: var(--maroon-700);
+  color: var(--gold-400);
   margin-top: 2px;
 }
 
