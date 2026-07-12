@@ -1627,17 +1627,20 @@ section {
   z-index: 0;
 }
 
-/* Corner floral using our existing floral image */
-.entourage::after {
-  content: '';
+/* Corner rose decorations rendered at 4 corners using separate HTML divs */
+.ent-corner {
   position: absolute;
-  top: 0; left: 0;
-  width: 260px; height: 260px;
-  background: url('assets/hero_floral_left.png') top left / cover no-repeat;
-  opacity: 0.18;
+  width: 200px;
+  height: 200px;
   pointer-events: none;
   z-index: 0;
+  opacity: 0.25;
+  background: url('assets/gold_leaf_branch.png') center / cover no-repeat;
 }
+.ent-corner--tl { top: 0;    left: 0;  transform: rotate(0deg); }
+.ent-corner--tr { top: 0;    right: 0; transform: rotate(90deg); }
+.ent-corner--bl { bottom: 0; left: 0;  transform: rotate(270deg); }
+.ent-corner--br { bottom: 0; right: 0; transform: rotate(180deg); }
 
 .entourage .container {
   position: relative;
