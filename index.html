@@ -367,24 +367,79 @@
 
   <!-- ================= GALLERY ================= -->
   <section class="gallery" id="gallery">
+    <!-- Corner florals -->
+    <div class="gal-floral gal-floral--tl" aria-hidden="true">❧</div>
+    <div class="gal-floral gal-floral--tr" aria-hidden="true">❧</div>
+    <div class="gal-floral gal-floral--bl" aria-hidden="true">❧</div>
+    <div class="gal-floral gal-floral--br" aria-hidden="true">❧</div>
+
     <div class="container">
+      <!-- Header -->
       <div class="section-head reveal">
         <span class="eyebrow">Gallery</span>
         <h2 class="section-title">Captured Moments</h2>
+        <p class="gal-subtitle"><em>A glimpse into our forever.</em></p>
       </div>
-      <div class="gallery-grid">
-        <div class="photo-slot reveal"><img src="assets/couple_1.png" alt="Gallery 1"
-            style="width: 100%; height: 100%; object-fit: cover;"></div>
-        <div class="photo-slot reveal"><img src="assets/couple_2.png" alt="Gallery 2"
-            style="width: 100%; height: 100%; object-fit: cover;"></div>
-        <div class="photo-slot reveal"><img src="assets/couple_3.png" alt="Gallery 3"
-            style="width: 100%; height: 100%; object-fit: cover;"></div>
-        <div class="photo-slot reveal"><img src="assets/couple_4.png" alt="Gallery 4"
-            style="width: 100%; height: 100%; object-fit: cover;"></div>
-        <div class="photo-slot reveal"><img src="assets/couple_5.png" alt="Gallery 5"
-            style="width: 100%; height: 100%; object-fit: cover;"></div>
-        <div class="photo-slot reveal"><img src="assets/couple_6.png" alt="Gallery 6"
-            style="width: 100%; height: 100%; object-fit: cover;"></div>
+
+      <!-- Top row: hero photo + side text -->
+      <div class="gal-top reveal">
+        <!-- Hero photo -->
+        <div class="gal-hero">
+          <img src="assets/couple_3.png" alt="Captured Moments Hero" class="gal-hero-img">
+          <div class="gal-hero-overlay">
+            <span class="gal-hero-heart">♡</span>
+            <p class="gal-hero-quote">TOGETHER<br>IS OUR<br>FAVORITE<br>PLACE<br>TO BE</p>
+          </div>
+        </div>
+
+        <!-- Side text panel -->
+        <div class="gal-side-text">
+          <div class="gal-side-icon">✿</div>
+          <h3 class="gal-side-title">Every moment<br>tells our story</h3>
+          <div class="gal-side-divider"></div>
+          <p class="gal-side-desc">From the little things to the big moments, these memories will last a lifetime.</p>
+          <a href="#gallery" class="gal-view-btn">
+            <span>🖼</span> VIEW ALL PHOTOS
+          </a>
+        </div>
+      </div>
+
+      <!-- Bottom mosaic grid -->
+      <div class="gal-mosaic reveal">
+        <!-- Col 1: tall single -->
+        <div class="gal-m-slot gal-m-tall">
+          <img src="assets/couple_6.png" alt="Gallery 6" class="gal-m-img">
+        </div>
+        <!-- Col 2: two stacked -->
+        <div class="gal-m-col">
+          <div class="gal-m-slot">
+            <img src="assets/couple_2.png" alt="Gallery 2" class="gal-m-img">
+          </div>
+          <div class="gal-m-slot">
+            <img src="assets/couple_4.png" alt="Gallery 4" class="gal-m-img">
+          </div>
+        </div>
+        <!-- Col 3: tall single -->
+        <div class="gal-m-slot gal-m-tall">
+          <img src="assets/couple_1.png" alt="Gallery 1" class="gal-m-img">
+        </div>
+        <!-- Col 4: two stacked -->
+        <div class="gal-m-col">
+          <div class="gal-m-slot">
+            <img src="assets/couple_5.png" alt="Gallery 5" class="gal-m-img">
+          </div>
+          <div class="gal-m-slot">
+            <img src="assets/couple_2.png" alt="Gallery 2b" class="gal-m-img">
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer quote -->
+      <div class="gal-footer-quote reveal">
+        <span class="gal-fq-mark gal-fq-open">"</span>
+        <p class="gal-fq-text">We didn't realize we were making memories,<br>we just knew we were having fun together.</p>
+        <span class="gal-fq-mark gal-fq-close">"</span>
+        <div class="gal-fq-heart">♥</div>
       </div>
     </div>
   </section>
