@@ -530,7 +530,7 @@ section {
    STORY — Editorial Collage
 ========================================================= */
 .story {
-  background: var(--cream-100);
+  background: radial-gradient(circle at 10% 10%, #faf6ef 0%, #f6efe2 100%);
   position: relative;
   overflow: hidden;
   padding: 100px 0;
@@ -730,15 +730,32 @@ section {
   letter-spacing: -0.05em;
 }
 
-/* Flowers on main card */
+/* Corner gold leaves background decorative elements */
+.story-leaf {
+  position: absolute;
+  width: 280px;
+  height: 280px;
+  background: url('assets/hero_floral_left.png') no-repeat;
+  background-size: contain;
+  opacity: 0.12;
+  pointer-events: none;
+  z-index: 1;
+}
+.story-leaf--tl { top: 0; left: 0; transform: rotate(0deg); }
+.story-leaf--tr { top: 0; right: 0; transform: rotate(90deg); }
+.story-leaf--bl { bottom: 0; left: 0; transform: rotate(270deg); }
+.story-leaf--br { bottom: 0; right: 0; transform: rotate(180deg); }
+
+/* Flowers on main card — mix-blend-mode multiply makes the white background box completely transparent! */
 .sc-floral-overlay {
   position: absolute;
-  bottom: -22px;
-  left: -25px;
-  width: 110px;
+  bottom: -32px;
+  left: -35px;
+  width: 135px;
   height: auto;
   z-index: 6;
   pointer-events: none;
+  mix-blend-mode: multiply;
 }
 
 /* Polaroid Overlaps */
@@ -781,31 +798,35 @@ section {
 
 /* Handwritten Texts */
 .sc-handwritten {
-  font-family: var(--font-script);
-  font-size: 1.25rem;
+  font-family: 'Alex Brush', cursive;
+  font-size: 1.85rem;
   color: var(--gold-500);
   font-weight: 400;
+  line-height: 1;
 }
 .sc-hand-tr {
-  margin-bottom: 6px;
+  margin-bottom: 2px;
   margin-right: 15px;
+  transform: rotate(-3deg);
 }
 .sc-hand-br {
-  margin-top: 6px;
-  margin-left: 15px;
+  margin-top: 12px;
+  margin-left: 20px;
+  transform: rotate(4deg);
 }
 
 /* Quote at bottom of collage */
 .sc-quote-wrap {
   position: absolute;
-  bottom: 10px;
-  left: 20px;
-  width: 280px;
+  bottom: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 290px;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 3px;
+  gap: 6px;
   z-index: 10;
 }
 .sc-quote-divider {
@@ -823,9 +844,14 @@ section {
   font-size: 0.55rem;
   color: var(--gold-400);
 }
+.sc-qd-heart-bottom {
+  font-size: 0.55rem;
+  color: var(--gold-400);
+  margin-top: 2px;
+}
 .sc-quote-text {
   font-family: var(--font-display);
-  font-size: .8rem;
+  font-size: .82rem;
   color: var(--ink-600);
   line-height: 1.6;
   margin: 0;
