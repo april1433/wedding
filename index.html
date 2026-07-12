@@ -111,21 +111,74 @@
 
   <!-- ================= STORY ================= -->
   <section class="story" id="story">
+    <!-- Big watermark monogram in background -->
+    <div class="story-watermark" aria-hidden="true">I&G</div>
+    
     <div class="container story-grid">
       <div class="story-copy reveal">
-        <span class="eyebrow">Our Story</span>
-        <h2 class="section-title">A Love Written <em>by Fate</em></h2>
-        <p>From a chance meeting to a love that changed everything. Our story is filled with little moments that led us
-          here — replace this paragraph with your own how-we-met story.</p>
-        <a href="#" class="btn">Read Our Story →</a>
+        <div class="story-header-wrap">
+          <span class="eyebrow">Our Story</span>
+          <div class="story-header-line"></div>
+        </div>
+        <h2 class="section-title">
+          A Love Written <br><span class="story-script">by Fate</span>
+        </h2>
+        <div class="story-heart-divider">
+          <span></span><span class="story-heart-icon">♥</span><span></span>
+        </div>
+        <div class="story-paragraphs">
+          <p>From a chance meeting to a love that changed everything.</p>
+          <p>Our story is filled with little moments that led us here — precious, honest, and beautifully ours.</p>
+          <p>We're so excited to start this new chapter together, surrounded by the people we love.</p>
+        </div>
+        <a href="#rsvp" class="btn-story-read">Read Our Story &nbsp;→</a>
       </div>
-      <div class="story-photos reveal">
-        <div class="photo-slot"><img src="assets/couple_5.png" alt="Ian & Grace 1"
-            style="width: 100%; height: 100%; object-fit: cover;"></div>
-        <div class="photo-slot"><img src="assets/couple_6.png" alt="Ian & Grace 2"
-            style="width: 100%; height: 100%; object-fit: cover;"></div>
-        <div class="photo-slot"><img src="assets/couple_3.png" alt="Ian & Grace 3"
-            style="width: 100%; height: 100%; object-fit: cover;"></div>
+
+      <!-- Right side: Polaroid Collage -->
+      <div class="story-collage reveal">
+        
+        <!-- Main Large Polaroid -->
+        <div class="sc-card sc-card-main">
+          <!-- Gold stamp seal -->
+          <div class="sc-seal">
+            <div class="sc-seal-inner">
+              <span class="sc-seal-text">I&G</span>
+            </div>
+          </div>
+          <div class="sc-img-wrap">
+            <img src="assets/couple_2.png" alt="Ian & Grace Main">
+          </div>
+          <!-- Floral overlay -->
+          <img src="assets/story_flowers.png" alt="" class="sc-floral-overlay" aria-hidden="true">
+        </div>
+
+        <!-- Top Right Overlapping Polaroid -->
+        <div class="sc-card-stack sc-card-tr-wrap">
+          <span class="sc-handwritten sc-hand-tr">The Beginning ♡</span>
+          <div class="sc-card sc-card-tr">
+            <div class="sc-img-wrap">
+              <img src="assets/couple_1.png" alt="Ian & Grace Beginning">
+            </div>
+          </div>
+        </div>
+
+        <!-- Bottom Right Overlapping Polaroid -->
+        <div class="sc-card-stack sc-card-br-wrap">
+          <div class="sc-card sc-card-br">
+            <div class="sc-img-wrap">
+              <img src="assets/couple_4.png" alt="Ian & Grace Forever">
+            </div>
+          </div>
+          <span class="sc-handwritten sc-hand-br">Our Forever ♡</span>
+        </div>
+
+        <!-- Quote Block at bottom center of collage -->
+        <div class="sc-quote-wrap">
+          <div class="sc-quote-divider"><span></span><span class="sc-qd-heart">♥</span><span></span></div>
+          <p class="sc-quote-text">Every moment with you feels like a beautiful dream I never want to end.</p>
+          <div class="sc-quote-divider"><span></span><span class="sc-qd-heart">♥</span><span></span></div>
+        </div>
+
       </div>
     </div>
   </section>
