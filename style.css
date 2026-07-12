@@ -882,6 +882,11 @@ section {
     max-width: 520px;
     margin: 0 auto;
   }
+  .story-leaf {
+    width: 150px;
+    height: 150px;
+    opacity: 0.1;
+  }
 }
 
 @media (max-width: 480px) {
@@ -918,9 +923,10 @@ section {
     bottom: 100px;
   }
   .sc-quote-wrap {
-    left: 10px;
-    width: 220px;
-    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 260px;
+    bottom: 12px;
   }
 }
 
