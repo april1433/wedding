@@ -1069,15 +1069,15 @@ section {
   height: 380px;
   background: #100008;
 }
-/* Hero image — fills the slot, cropped nicely */
+/* Hero image — show full couple (contain blends with dark bg) */
 .gal-hero-bg { display: none; }
 .gal-hero-img {
   position: absolute;
   inset: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  object-position: center 30%;
+  object-fit: contain;
+  object-position: center center;
   display: block;
   z-index: 1;
 }
@@ -1183,14 +1183,14 @@ section {
 .gal-m-tall { height: 100%; }
 /* Hide unused bg images */
 .gal-m-bg { display: none; }
-/* Couple photo — fills slot cleanly */
+/* Couple photo — contain so full person is visible */
 .gal-m-img {
   position: absolute;
   inset: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  object-position: center 20%;
+  object-fit: contain;
+  object-position: center bottom;
   display: block;
   z-index: 1;
   transition: transform .4s ease;
